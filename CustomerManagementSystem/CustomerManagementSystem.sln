@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagementSystem.BusinessLayer", "CustomerManagementSystem.BusinessLayer\CustomerManagementSystem.BusinessLayer.csproj", "{8FA822BC-F171-4538-97DB-F0618C90C7E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerManagementSystem.BusinessLayer", "CustomerManagementSystem.BusinessLayer\CustomerManagementSystem.BusinessLayer.csproj", "{8FA822BC-F171-4538-97DB-F0618C90C7E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5598D912-70E2-4154-B96B-363CE35F1024}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagementSystem.BusinessLayerTest", "Tests\CustomerManagementSystem.BusinessLayerTest\CustomerManagementSystem.BusinessLayerTest.csproj", "{8080C169-1B0A-4D02-BA84-3416CC07F035}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{8FA822BC-F171-4538-97DB-F0618C90C7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FA822BC-F171-4538-97DB-F0618C90C7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FA822BC-F171-4538-97DB-F0618C90C7E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8080C169-1B0A-4D02-BA84-3416CC07F035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8080C169-1B0A-4D02-BA84-3416CC07F035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8080C169-1B0A-4D02-BA84-3416CC07F035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8080C169-1B0A-4D02-BA84-3416CC07F035}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8080C169-1B0A-4D02-BA84-3416CC07F035} = {5598D912-70E2-4154-B96B-363CE35F1024}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {22FF9D2E-787B-4261-A0F4-ADB7F382DF8C}
