@@ -40,9 +40,9 @@ namespace CustomerManagementSystem.BusinessLayer
             }
 
         }
-        public string Email { get; set; } 
+        public string Email { get; set; }
 
-
+        public static int InstanceCount { get; set; }
     }
 
 }
