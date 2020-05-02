@@ -26,8 +26,19 @@ namespace CustomerManagementSystem.BusinessLayer
         {
             get
             {
-                return LastName + ", " + FirstName;
+                string fullName = LastName;
+
+                if (!string.IsNullOrWhiteSpace(FirstName))
+                {
+                    if (!string.IsNullOrWhiteSpace(LastName))
+                    {
+                        fullName += ", ";
+                    }
+                    fullName += FirstName;
+                }
+                return fullName;
             }
+
         }
         public string Email { get; set; } 
 
