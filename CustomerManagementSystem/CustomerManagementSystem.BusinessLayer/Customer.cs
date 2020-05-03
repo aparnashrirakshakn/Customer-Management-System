@@ -57,35 +57,7 @@ namespace CustomerManagementSystem.BusinessLayer
 
         public static int InstanceCount { get; set; }
 
-        ///<summary>
-        /// Retrieves one customer with the specific id 
-        ///</summary>
-        ///<returns></returns>
-        public Customer Retrieve(int customerId)
-        {
-            // TODO: write logic to retrieve the customer with the specific id
-            return new Customer();
-        }
-
-        ///<summary>
-        /// Retrieves all customers
-        ///</summary>
-        ///<returns></returns>
-        public List<Customer> Retrieve()
-        {
-            // TODO: write logic to retrieve the customer with the specific id
-            return new List<Customer>();
-        }
-
-        ///<summary>
-        /// Save the current Customer
-        ///</summary>
-        ///<returns></returns>
-        public void Save()
-        {
-            // TODO: write logic to save the customer
-        }
-
+        
         /// <summary>
         /// Validates Customer data
         /// </summary>
