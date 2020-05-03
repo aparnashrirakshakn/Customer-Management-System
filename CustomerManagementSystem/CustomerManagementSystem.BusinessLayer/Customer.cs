@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CustomerManagementSystem.BusinessLayer.Enums;
+using System;
 using System.Collections.Generic;
 
 namespace CustomerManagementSystem.BusinessLayer
@@ -17,6 +18,8 @@ namespace CustomerManagementSystem.BusinessLayer
         }
 
         public int CustomerId { get; private set; }
+
+        public CustomerType CustomerType { get; set; }
 
         private string _lastName;
 
