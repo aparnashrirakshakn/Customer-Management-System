@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CustomerManagementSystem.BusinessLayer
 {
-    public class Address
+    public class Address : EntityBase
     {
         public Address()
         {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace CustomerManagementSystem.BusinessLayer
 {
-    public class Customer
+    public class Customer : EntityBase
     {
         public Customer(): this(0)
         {

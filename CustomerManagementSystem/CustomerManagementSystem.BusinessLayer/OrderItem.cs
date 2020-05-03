@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CustomerManagementSystem.BusinessLayer
 {
-    public class OrderItem
+    public class OrderItem : EntityBase
     {
         public OrderItem()
         {
