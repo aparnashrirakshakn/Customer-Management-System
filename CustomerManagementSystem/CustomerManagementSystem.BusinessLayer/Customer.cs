@@ -5,6 +5,16 @@ namespace CustomerManagementSystem.BusinessLayer
 {
     public class Customer
     {
+        public Customer()
+        {
+                
+        }
+
+        public Customer(int customerId)
+        {
+            CustomerId = customerId;
+        }
+
         public int CustomerId { get; private set; }
 
         private string _lastName;
