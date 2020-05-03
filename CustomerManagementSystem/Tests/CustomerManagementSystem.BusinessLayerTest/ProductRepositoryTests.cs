@@ -29,5 +29,48 @@ namespace CustomerManagementSystem.BusinessLayerTest
             Assert.AreEqual(expected.CurrentPrice, actual.CurrentPrice);
 
         }
+
+        [Test]
+        public void Save_Returns_Success_As_True_On_Valid_Product()
+        {
+            // Arrange
+            ProductRepository productRepository = new ProductRepository();
+
+            Product updatedProduct = new Product(2)
+            {
+                CurrentPrice = 30.00,
+                ProductDescription = "An autobiography of one of the most loved men in India - Dr. A.P.J Abdul Kalam",
+                ProductName = "Wings of Fire",
+                HasChanges = true
+            };
+
+            // Act
+            var actual = productRepository.Save(updatedProduct);
+
+            // Assert
+            Assert.AreEqual(true, actual);
+        }
+
+        [Test]
+        public void Save_Returns_Success_As_False_On_Invalid_Product()
+        {
+            // Arrange
+            ProductRepository productRepository = new ProductRepository();
+
+            Product updatedProduct = new Product(2)
+            {
+                CurrentPrice = null,
+                ProductDescription = "An autobiography of one of the most loved men in India - Dr. A.P.J Abdul Kalam",
+                ProductName = "Wings of Fire",
+                HasChanges = true
+            };
+
+            // Act
+            var actual = productRepository.Save(updatedProduct);
+
+            // Assert
+            Assert.AreEqual(false, actual);
+        }
     }
 }
+

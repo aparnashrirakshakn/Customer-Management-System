@@ -38,9 +38,27 @@ namespace CustomerManagementSystem.BusinessLayer
         /// Save the current Product
         ///</summary>
         ///<returns></returns>
-        public void Save()
+        public bool Save(Product product)
         {
-            // TODO: write logic to save the product
+            var success = true;
+
+            if(product.IsValid)
+            {
+                if (product.IsNew)
+                {
+                    // TODO: write insert logic here
+                }
+                else
+                {
+                    // TODO: write update logic here
+                }
+            }
+            else
+            {
+                success = false;
+            }
+
+            return success;
         }
 
     }
