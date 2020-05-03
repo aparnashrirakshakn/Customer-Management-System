@@ -58,7 +58,7 @@ namespace CustomerManagementSystem.BusinessLayer
         /// Validates orderItem data
         /// </summary>
         /// <returns></returns>
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 

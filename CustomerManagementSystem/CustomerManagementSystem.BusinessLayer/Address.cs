@@ -37,7 +37,7 @@ namespace CustomerManagementSystem.BusinessLayer
         /// Validates the address data
         /// </summary>
         /// <returns></returns>
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 

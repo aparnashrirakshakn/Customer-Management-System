@@ -67,7 +67,7 @@ namespace CustomerManagementSystem.BusinessLayer
         /// Validates Customer data
         /// </summary>
         /// <returns></returns>
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 
