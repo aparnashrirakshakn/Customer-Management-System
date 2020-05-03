@@ -11,10 +11,10 @@ namespace CommonTest
             // Arrange
             var source = "InsertSpaces";
             var expected = "Insert Spaces";
-            var handler = new StringHandler();
+            
 
             // Act
-            var actual = handler.InsertSpaces(source);
+            var actual = StringHandler.InsertSpaces(source);
 
             // Assert 
             Assert.AreEqual(expected, actual);
@@ -26,10 +26,9 @@ namespace CommonTest
             // Arrange
             var source = "Insert Spaces";
             var expected = "Insert Spaces";
-            var handler = new StringHandler();
 
             // Act
-            var actual = handler.InsertSpaces(source);
+            var actual = StringHandler.InsertSpaces(source);
 
             // Assert 
             Assert.AreEqual(expected, actual);
