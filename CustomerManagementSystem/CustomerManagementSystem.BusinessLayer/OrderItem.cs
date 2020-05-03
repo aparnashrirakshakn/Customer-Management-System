@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CustomerManagementSystem.BusinessLayer
 {
-    class OrderItem
+    public class OrderItem
     {
         public OrderItem()
         {

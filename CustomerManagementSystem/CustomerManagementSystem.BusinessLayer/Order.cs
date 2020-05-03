@@ -6,7 +6,7 @@ namespace CustomerManagementSystem.BusinessLayer
 {
     public class Order
     {
-        public Order()
+        public Order(): this(0)
         {
 
         }
@@ -14,11 +14,18 @@ namespace CustomerManagementSystem.BusinessLayer
         public Order(int orderId)
         {
             OrderId = orderId;
+            OrderItems = new List<OrderItem>();
         }
+
+        public int CustomerId { get; set; }
 
         public int OrderId { get; private set; }
 
         public DateTimeOffset? OrderDate { get; set; } // allows OrderDate to be set in different timezones
+
+        public List<OrderItem> OrderItems { get; set; }
+
+        public int ShippingAddressId { get; set; }
 
         /// <summary>
         /// Validates Order data
