@@ -14,7 +14,7 @@ namespace CommonTest
             
 
             // Act
-            var actual = StringHandler.InsertSpaces(source);
+            var actual = source.InsertSpaces();
 
             // Assert 
             Assert.AreEqual(expected, actual);
@@ -28,7 +28,7 @@ namespace CommonTest
             var expected = "Insert Spaces";
 
             // Act
-            var actual = StringHandler.InsertSpaces(source);
+            var actual = source.InsertSpaces();
 
             // Assert 
             Assert.AreEqual(expected, actual);

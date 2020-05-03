@@ -23,7 +23,7 @@ namespace CustomerManagementSystem.BusinessLayer
         public string ProductName { 
             get
             {
-                return StringHandler.InsertSpaces(_productName);               
+                return _productName.InsertSpaces();               
             }
 
             set
