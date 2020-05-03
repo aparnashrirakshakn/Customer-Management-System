@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CustomerManagementSystem.BusinessLayer
 {
-    class Product
+    public class Product
     {
         public Product()
         {
@@ -22,35 +22,6 @@ namespace CustomerManagementSystem.BusinessLayer
         public string ProductDescription { get; set; }
 
         public double? CurrentPrice { get; set; }
-
-        ///<summary>
-        /// Retrieves one product with the specific id 
-        ///</summary>
-        ///<returns></returns>
-        public Product Retrieve(int productId)
-        {
-            // TODO: write logic to retrieve the product with specific Id
-            return new Product();
-        }
-
-        ///<summary>
-        /// Retrieves all products
-        ///</summary>
-        ///<returns></returns>
-        public List<Product> Retrieve()
-        {
-            // TODO: write logic to retrieve all the products
-            return new List<Product>();
-        }
-
-        ///<summary>
-        /// Save the current Product
-        ///</summary>
-        ///<returns></returns>
-        public void Save()
-        {
-            // TODO: write logic to save the product
-        }
 
         /// <summary>
         /// Validates Product data
