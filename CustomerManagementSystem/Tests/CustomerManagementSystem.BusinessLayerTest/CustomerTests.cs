@@ -77,5 +77,36 @@ namespace CustomerManagementSystem.BusinessLayerTest
             Assert.AreEqual(3, Customer.InstanceCount);
         }
 
+        [Test]
+        public void Validate_Returns_IsValid_True_For_Valid_Values()
+        {
+            // Arrange
+            Customer customer = new Customer
+            {
+                LastName = "Shriraksha",
+                Email = "myvalidemail@email.me"
+            };
+
+            // Act
+            bool result = customer.Validate();
+
+            // Assert
+            Assert.IsTrue(result);
+        }
+
+        public void Validate_Returns_IsValid_False_For_Invalid_Values()
+        {
+            // Arrange
+            Customer customer = new Customer
+            {
+                FirstName = "Aparna"
+            };
+
+            // Act
+            bool result = customer.Validate();
+
+            // Assert
+            Assert.IsFalse(result);
+        }
     }
 }
