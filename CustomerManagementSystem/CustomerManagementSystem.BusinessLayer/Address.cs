@@ -1,10 +1,11 @@
-﻿using System;
+﻿using CustomerManagementSystem.BusinessLayer.Enums;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CustomerManagementSystem.BusinessLayer
 {
-    class Address
+    public class Address
     {
         public Address()
         {
@@ -18,7 +19,7 @@ namespace CustomerManagementSystem.BusinessLayer
 
         public int AddressId { get; private set; }
 
-        public int AddressType { get; set; }
+        public AddressType AddressType { get; set; }
 
         public string StreetLine1 { get; set; }
 

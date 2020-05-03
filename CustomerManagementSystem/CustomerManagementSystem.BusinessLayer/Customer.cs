@@ -5,7 +5,7 @@ namespace CustomerManagementSystem.BusinessLayer
 {
     public class Customer
     {
-        public Customer()
+        public Customer(): this(0)
         {
                 
         }
@@ -13,6 +13,7 @@ namespace CustomerManagementSystem.BusinessLayer
         public Customer(int customerId)
         {
             CustomerId = customerId;
+            AddressList = new List<Address>();
         }
 
         public int CustomerId { get; private set; }
@@ -57,7 +58,8 @@ namespace CustomerManagementSystem.BusinessLayer
 
         public static int InstanceCount { get; set; }
 
-        
+        public List<Address> AddressList { get; set; }
+
         /// <summary>
         /// Validates Customer data
         /// </summary>
